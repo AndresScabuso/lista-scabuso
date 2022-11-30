@@ -17,10 +17,12 @@ export class Alumno {
     }
 
     public subirNota() {
-        this.nota++;
+        if(this.nota < 10)
+            this.nota++;
     }
 
     public bajarNota() {
-        this.nota--;
+        if(this.nota > 0)
+            this.nota--;
     }
 }

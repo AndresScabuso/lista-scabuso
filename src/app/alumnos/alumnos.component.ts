@@ -20,14 +20,4 @@ export class AlumnosComponent implements OnInit {
   ngOnInit(): void {
     
   }
-
-  agregarAlumno(
-    nombre: string,
-    apellido: string,
-    fechaNacimiento: Date,
-    nota: number
-  )
-  {
-    this.alumnos.push(new Alumno(nombre, apellido, fechaNacimiento, nota))
-  }
 }
